@@ -1,0 +1,41 @@
+body {
+    width: 100%;
+    font-family: "Impact", sans-serif;
+    margin: auto;
+}
+.polosa {
+    background: #a64dff;
+    width: 100%;
+}
+ul li {
+    list-style-type: none;
+}
+.menu {
+    background: #a64dff;
+    width: 900px;
+    height: 40px;
+    margin: 1px;
+    box-shadow: 0 1px 0 1px #e7eaec, 0 -1px 0 1px #e7eaec;
+}
+.menu li {
+    text-align: center;
+    color: white;
+    padding-left: 12px;
+    padding-right: 12px;
+    line-height: 40px;
+    float: left;
+    position: relative;
+}
+.menu li:last-child {
+    float: right;
+    margin-right: 80px;
+}
+.menu li:hover {
+    color: rgba(122, 133, 140, 0.89);
+    background: rgb(228, 239, 242);
+    box-shadow: 0 1px 1px 0  #c8d4db,
+    0 1px 1px 0  #c8d4db,
+    1px 0 1px 0 #f6f9fb,
+    -1px 0 1px 0 #f6f9fb;
+}
+

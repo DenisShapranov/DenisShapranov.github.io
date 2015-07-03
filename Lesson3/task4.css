@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Cambria';
+    src: url('fonts/cambria.ttf');
+}
+
+a {font-size: 14px}
+
+a {color:red;}
+
+a[href^="http"] {color:#f70}
+a[href*="google"] {color:#666}
+a[target="_blank"]:after {
+    content:"\21F1";
+    margin-left: 5px;
+    display: inline-block;
+    transform: scaleX(-1);
+    font-family: 'Cambria';
+}

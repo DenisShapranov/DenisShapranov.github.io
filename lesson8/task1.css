@@ -1,0 +1,70 @@
+.Yandex_search {
+    width: 350px;
+    height: 60px;
+    background: #ffde67;
+}
+.myinput {
+    height:25px;
+    width: 250px;
+    margin: 5px 0 0 5px;
+    box-shadow: 0px 0px 3px 0px #c6c6c6 inset;
+    border: 1px solid #c6c6c6;
+}
+.submit {
+    width: 70px;
+    height: 26px;
+    display: block;
+    position: relative;
+    margin-left: 260px;
+    margin-top: -27px;
+}
+input.checkbox {
+    margin-top: 9px;
+}
+
+label {
+    position: absolute;
+    margin-top: 5px;
+    font-family: serif;
+    font-size: 14px;
+}
+.Yandex_search:after {
+    content: "";
+    z-index: 1;
+    margin-top: -59px;
+    margin-left: 350px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 18px solid #ffde67;
+    border-bottom: 30px solid transparent;
+
+}
+/*.nos {
+    z-index: 1;
+    margin-top: -60px;
+    margin-left: 350px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 18px solid #ffde67;
+    border-bottom: 30px solid transparent;
+}*/
+.Yandex_search:hover {
+    width: 450px;
+    transition: all 2s;
+}
+.Yandex_search:hover:after {
+    margin-left: 450px;
+    transition: all 2s;
+}
+@keyframes my-custom-name {
+    /* from, to = 0%, 100% */
+
+    from { width: 350px; }
+    50% { width: 400px; }
+    to {width: 450px; }
+}
+

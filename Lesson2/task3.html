@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> Эксперименты с формами</title>
+</head>
+<body>
+<h1> Формы</h1>
+<form>
+    Name<br/>
+    <input type="text" name="name" placeholder="Ваше имя" title="Your name"required/> <br/>
+    e-mail<br/>
+    <input type="email" name="email" placeholder="___@___.__" required/><br/>
+    Sex<br/>
+    <input type="radio"  name="sex" value="male"/>
+    <input type="radio"  name="sex" value="female"  /><br/>
+    Current status<br/>
+    <input TYPE="checkbox" id="check1"><label for="check1">Student</label><br/>
+    <input type="checkbox" id="check2"><label for="check2">Employed</label> <br/>
+    <input type="checkbox" id="check3"><label for="check3">Unemployed</label><br/>
+    Month and Year of birth<br/>
+    <select name="month">
+        <option value="january" selected="selected">January </option>
+        <option value="february" >February </option>
+        <option value="march" >March </option>
+        <option value="april" >April </option>
+    </select>
+    <select name="year">
+        <option value="1984" selected="selected">1984 </option>
+        <option value="1985" >1985 </option>
+        <option value="1986" >1986 </option>
+        <option value="1987" >1987 </option>
+    </select><br/>
+    Skills and Technolies<br/>
+    <select size="10" name="skills" multiple>
+        <optgroup label="Tech skills">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="git">git</option>
+        </optgroup>
+        <optgroup label="Soft skills">
+            <option value="TM">Time management</option>
+            <option value="PA">Proactivity</option>
+            <option value="TW">Teamwork</option>
+            <option value="LS">Leadership</option>
+        </optgroup>
+    </select><br/>
+    Photo<br/>
+    <button type="button" name="choose" >Choose File</button> No file chosen
+    <br/>
+    Comments  <br/>
+    <textarea rows="3" cols="20" name="comments" placeholder="Можете оставить свои комментарии" ></textarea><br/>
+    <input type="submit" value="Save"/><br/>
+</form>
+</body>
+</html>

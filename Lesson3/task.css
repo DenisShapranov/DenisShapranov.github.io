@@ -1,0 +1,15 @@
+h1 {color:orange; text-align:right; width:62%}
+p {width:60%; font-weight:normal}
+p:first-letter {color:red; font-size:30px }
+em {color:white; background:green}
+ul li {font-weight:bold}
+ol li {font-weight: normal}
+#allotment h2 {color:orange}
+#allotment .fruits-list {color:grey}
+#allotment .vegetables-list {color: red;}
+#warehouse  h2 {color:blue}
+#warehouse .fruits-list {color:green}
+#warehouse .vegetables-list {color:red;}
+thead {font-weight:bold; text-align:center}
+tbody td {color:white; background:green; text-align:center}
+tbody td:nth-child(4n+1) {color:orange; background:white; text-align:left}

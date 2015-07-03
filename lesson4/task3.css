@@ -1,0 +1,46 @@
+ul li {
+    list-style-type: none;
+}
+.pager {
+    margin: auto;
+    width: 80%;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    color: #b00aff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.navigator li {
+    float: left;
+    margin: 0 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.navigator li:hover:not([id="none"]){
+    color: #fff;
+    background: #b00aff;
+    border-top: 1px solid #b00aff;
+    border-bottom: 1px solid #b00aff;
+    border-radius: 3px;
+}
+
+.numbers li:not([id="none"]) {
+    margin: 0 3px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #b4c0c7;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 20px;
+}
+.numbers li:hover:not([id="none"]) {
+    color: #fff;
+    background: #b00aff;
+}
+#none {
+    border: none;
+}
