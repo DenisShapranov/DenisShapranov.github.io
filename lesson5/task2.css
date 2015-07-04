@@ -1,0 +1,107 @@
+.container {
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    text-align: center;
+}
+.pricing h3,
+.pricing ul,
+.pricing button {
+    margin: auto;
+    border: 0;
+    padding: 0;
+}
+.pricing {
+    box-sizing: border-box;
+    min-width: 290px;
+    min-height: 460px;
+    border-radius: 5px;
+    border: 4px solid #ee8129;
+    box-shadow: 0 0 12px 1px rgb(40, 120, 178);
+}
+.orange {background-color: #ee8129;}
+.pricing_header {
+    margin-bottom: 0;
+    height: 70px;
+}
+.pricing_header h3 {
+    color: white;
+    font: 24px/68px 'Trebuchet MS';
+    text-align: center;
+}
+.pricing_body h3 {
+    color: #2f4f4f;
+    font: 24px/68px 'Trebuchet MS';
+}
+.pricing_body {
+    background-color: white;
+    height: 355px;
+    padding-bottom: 35px;
+}
+.pricing_price {
+    font-family: 'Trebuchet MS';
+    color: #2c4748;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+.pricing_dollar {
+    display: inline;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    position: relative;
+    bottom: 35px;
+}
+.pricing_value {
+    display: inline;
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: -4px;
+}
+.pricing_month {
+    display: inline;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    top: 5px;
+}
+
+.pricing_list {
+    margin: 10px 15px 20px 15px;
+    color: #888888;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.pricing_list li {
+    list-style: none;
+    background-color: #f2f2f2;
+    min-width: 260px;
+    margin: 1px;
+    padding: 8px 0 8px 0;
+}
+.pricing_list li span {
+    padding-left: 26px;
+    margin-left: 33px;
+    background: url(status-check-green-10x10.png) 0 0 no-repeat;
+}
+.text_uppercase {text-transform: uppercase;}
+.pricing_list li:nth-child(odd) {background-color: #e7f6ff;}
+.pricing_button {
+    display: block;
+    width: 250px;
+    height: 38px;
+    box-shadow: 0 3px 0 0 #b3560b;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+}
+.pricing_button:active {box-shadow: inset 2px 2px 0 1px #b3560b;}
+.pricing_button:hover {cursor: pointer;}
