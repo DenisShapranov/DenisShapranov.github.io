@@ -17,11 +17,22 @@ function fibonachiNumb(numb) {
     }
     return fibNum;
 }
+function fibonachiNumbV1 (n) {
+    var a = 1, b = 0, x;
+    for (i = 0; i < n; i++) {
+        x = a + b;
+        a = b;
+        b = x;
+    }
+    return b;
+} //calculate fibonachi number by cicle
+
 do {
     number1 = +prompt('Enter number for Fibonachi solve', '1'); //enter number for solve
 } while (!isNumeric(number1) || (number1 <= 0)); //repeat if number incorrect
 
-alert ('Number Fibonacci of ' + number1 + ' = ' + fibonachiNumb(number1)); //Output Fibonachi number
+//alert ('Number Fibonacci of ' + number1 + ' = ' + fibonachiNumb(number1)); //Output Fibonachi number (hangs when  number1 > 40 )
+alert ('Number Fibonacci of ' + number1 + ' = ' + fibonachiNumbV1(number1)); //Output Fibonachi number
 
 // Task2
 
