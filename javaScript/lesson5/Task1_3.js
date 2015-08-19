@@ -47,5 +47,5 @@ console.log(arrayNumbers);
 //console.log(numberSum);
 for(var i = 0; i < arrayNumbers.length; i++)
     numberSum += arrayNumbers[i];
-console.log(numberSum);
+alert("Sum of numbers you entered: " + numberSum);
 
