@@ -42,9 +42,17 @@ field.onclick = function(event) {
     ball.style.margin = 0;
     if ((ballCoords.top < 90) && (ballCoords.top > 60) && (ballCoords.left < 2)) {
         scoreArray[0]++;
-    }
-    if ((ballCoords.top < 90) && (ballCoords.top > 60) && (ballCoords.left > 187) ) {
+        setTimeout(function() {
+            ball.style.left = 50 + "%";
+            ball.style.top = "50%";
+        }, 1200);
+        }
+    if ((ballCoords.top < 90) && (ballCoords.top > 60) && (ballCoords.left > 188) ) {
         scoreArray[1]++;
+        setTimeout(function() {
+            ball.style.left = 50 + "%";
+            ball.style.top = "50%";
+        }, 1200);
     }
     setTimeout(function() {
         tablo.textContent = scoreArray[0] + ':' + scoreArray[1];
