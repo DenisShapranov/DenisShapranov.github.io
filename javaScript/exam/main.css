@@ -1,0 +1,374 @@
+@import url('reset.css');
+
+html {
+  height: 100%;
+  background-color: darkgray;
+}
+.container {
+  width: 264px;
+  margin: 50px auto;
+  zoom: 2.5;
+}
+.header {
+  height: 30px;
+  background-color: #000;
+  position: relative;
+}
+.statistics {
+  font-size: 8px;
+  text-align: center;
+  color: #dc0e00;
+  background-color: blanchedalmond;
+  border-radius: 6px;
+  width: 40%;
+  height: 20px;
+  position: relative;
+  top:5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.level_No {
+  font-size: 12px;
+  text-align: center;
+  color: #211cfc;
+  display: inline-block;
+  margin: 10px 0 0 10px;
+  width: 20%;
+  background-color: #ffec1c;
+  border-radius: 2px;
+}
+.button_start {
+  font-size: 8px;
+  font-family: inherit;
+  position: absolute;
+  width: 15%;
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: 8px;
+  display: inline-block;
+  cursor: pointer;
+  transition: background .8s;
+  color: #dc0e00;
+  border: 1px solid #211cfc;
+  border-radius: 4px;
+  background-color: transparent;
+}
+.button_start:hover {
+  background-color: rgba(255,255,255,.5);
+}
+
+
+.button_next {
+  font-size: 8px;
+  font-family: inherit;
+  position: absolute;
+  right: 5px;
+  bottom: 8px;
+  display: inline-block;
+  cursor: pointer;
+  transition: background .8s;
+  color: #dc0e00;
+  border: 1px solid #211cfc;
+  border-radius: 4px;
+  background-color: transparent;
+}
+.button_next:hover {    background-color: rgba(255,255,255,.5);}
+
+.hide
+{
+  visibility: hidden;
+  transition: .6s;
+  opacity: 0;
+}
+
+.content {
+  position: relative;
+}
+.background {
+  background: url(img/bg.png) no-repeat;
+  height: 134px;
+  cursor: url(img/aim.png), pointer;
+}
+/*common part*/
+
+.gunman {
+  width: 33px;
+  background-image: url(img/gunman.png);
+  top: 40px;
+  /*display: none;*/
+  overflow: hidden;
+  position: absolute;
+}
+.g_1 {  height: 64px;}
+.g_2 {  height: 74px;}
+.g_3 {  height: 79px;}
+.g_4 {  height: 65px;}
+.g_5 {  height: 68px;}
+
+
+/*first gunman actions*/
+
+.gunman_1_right {
+  right: 0;
+  animation: play_1 0.3s steps(3) infinite;
+}
+@keyframes play_1 {
+  100% {    background-position: -99px 0;  }
+}
+
+.gunman_1_stop {
+  right: 120px;
+  background-position: -101px 0;
+  animation: stay_1 1s steps(3) infinite;
+}
+@keyframes stay_1 {
+   100% { background-position: -201px 0; }
+}
+.gunman_1_shoot {
+  right: 120px;
+  background-position: -201px 0;
+  animation: shoot_1 1s steps(3);
+  animation-fill-mode: forwards;
+}
+@keyframes shoot_1 {
+  100% { background-position: -303px 0; }
+}
+
+.gunman_1_fall {
+  right: 120px;
+  background-position: -303px 0;
+  animation: fall_1 0.5s steps(3);
+  animation-fill-mode: forwards;
+}
+@keyframes fall_1 {
+ 100% { background-position: -403px 0;    }
+}
+.gunman_1_died {
+  right: 120px;
+  background-position: -403px 0;
+}
+.gunman_1_won {
+  right: 120px;
+  background-position: -435px 0;
+}
+
+/*second gunman actions*/
+.gunman_2_right {
+  right: 0;
+  background-position: 0 -68px;
+  animation: play_2 0.3s steps(3) infinite;
+}
+@keyframes play_2 {
+  100% {    background-position: -102px -68px;  }
+}
+
+.gunman_2_stop {
+  right: 120px;
+  background-position: 0 -68px;
+  animation: play_2 1s steps(3) infinite;
+}
+
+.gunman_2_shoot {
+  width: 27px;
+  right: 120px;
+  background-position: -102px -68px;
+  animation: shoot_2 3s steps(4);
+  animation-fill-mode: forwards;
+}
+@keyframes shoot_2 {
+  100% { background-position: -210px -68px; }
+}
+
+.gunman_2_fall {
+  right: 120px;
+  width: 27px;
+  background-position: -211px -68px;
+  animation: fall_2 1s steps(1);
+  animation-fill-mode: forwards;
+}
+@keyframes fall_2 {
+  100%  { background-position: -238px -68px;    }
+}
+.gunman_2_died {
+  width: 27px;
+  right: 120px;
+  background-position: -238px -68px;
+}
+.gunman_2_won {
+  width: 30px;
+  right: 120px;
+  background-position: -270px -68px;
+}
+
+/*third gunman actions*/
+.gunman_3_right {
+  right: 0;
+  width: 27px;
+  background-position: 0 -145px;
+  animation: play_3 0.3s steps(3) infinite;
+}
+@keyframes play_3 {
+  100% {    background-position: -84px -145px;  }
+}
+
+.gunman_3_stop {
+  right: 120px;
+  width: 27px;
+  background-position: 0 -145px;
+  animation: play_3 1s steps(3) infinite;
+}
+
+.gunman_3_shoot {
+  width: 28px;
+  right: 120px;
+  background-position: -84px -145px;
+  animation: shoot_3 1s steps(3);
+  animation-fill-mode: forwards;
+}
+@keyframes shoot_3 {
+  100% { background-position: -175px -145px; }
+}
+
+.gunman_3_fall {
+  right: 120px;
+  width: 33px;
+  background-position: -172px -145px;
+  animation: fall_3 1s steps(1);
+  animation-fill-mode: forwards;
+}
+@keyframes fall_3 {
+  100% { background-position: -205px -145px;    }
+}
+.gunman_3_died {
+  width: 22px;
+  right: 120px;
+  background-position: -237px -145px;
+}
+.gunman_3_won {
+  width: 28px;
+  right: 120px;
+  background-position: -260px -145px;
+}
+/*fourth gunman actions*/
+.gunman_4_right {
+  right: 0;
+  width: 32px;
+  background-position: 0 -227px;
+  animation: play_4 0.5s steps(3) infinite;
+}
+@keyframes play_4 {
+  100% {    background-position: -102px -227px;  }
+}
+
+.gunman_4_stop {
+  right: 120px;
+  background-position: 0 -227px;
+  animation: play_4 1s steps(3) infinite;
+}
+
+.gunman_4_shoot {
+  width: 32px;
+  right: 120px;
+  background-position: -102px -227px;
+  animation: shoot_4 0.7s steps(3);
+  animation-fill-mode: forwards;
+}
+@keyframes shoot_4 {
+  100% { background-position: -202px -227px; }
+}
+
+.gunman_4_fall {
+  right: 120px;
+  width: 33px;
+  background-position: -201px -227px;
+  animation: fall_4 0.3s steps(2);
+  animation-fill-mode: forwards;
+}
+@keyframes fall_4 {
+  100% { background-position: -268px -227px;    }
+}
+.gunman_4_died {
+  width: 33px;
+  right: 120px;
+  background-position: -268px -227px;
+}
+.gunman_4_won {
+  width: 33px;
+  right: 120px;
+  background-position: -302px -227px;
+}
+/*fifth gunman actions*/
+
+.gunman_5_right {
+  right: 0;
+  width: 32px;
+  background-position: 0 -297px;
+  animation: play_5 0.5s steps(3) infinite;
+}
+@keyframes play_5 {
+  100% {    background-position: -102px -297px;  }
+}
+
+.gunman_5_stop {
+  right: 120px;
+  background-position: 0 -297px;
+  animation: play_5 1s steps(3) infinite;
+}
+
+.gunman_5_shoot {
+  width: 30px;
+  right: 120px;
+  background-position: -102px -297px;
+  animation: shoot_5 0.6s steps(3);
+  animation-fill-mode: forwards;
+}
+@keyframes shoot_5 {
+  100% { background-position: -195px -297px; }
+}
+.gunman_5_fall {
+  right: 120px;
+  width: 33px;
+  background-position: -193px -297px;
+  animation: fall_5 0.2s steps(2);
+  animation-fill-mode: forwards;
+}
+@keyframes fall_5 {
+  100% { background-position: -260px -297px;    }
+}
+.gunman_5_died {
+  width: 25px;
+  right: 120px;
+  background-position: -293px -297px;
+}
+.gunman_5_won {
+  width: 33px;
+  right: 120px;
+  background-position: -318px -297px;
+}
+
+
+/*common action*/
+.gunman__move {
+  right: 120px;
+  transition: right 3s linear 0.1s;
+}
+
+.alert {
+  position: absolute;
+  width: 20%;
+  text-align: center;
+  z-index: 100;
+  background: #fff;
+  top: 10px;
+  margin-left: 35%;
+  display: none;
+  font-size: 0.6em;
+  border-radius: 3px;
+}
+.footer {
+  height: 30px;
+  background-color: #000;
+  position: relative;
+}
+
